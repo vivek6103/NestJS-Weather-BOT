@@ -99,35 +99,6 @@ export class TelegramBotService {
       }
     });
   
-
-    // this.bot.onText(/\/subscribe/, (msg) => {
-    //   const chatId = msg.chat.id;
-    //   if (this.subscribedUsers.has(chatId)) {
-    //     this.bot.sendMessage(chatId, 'You are already subscribed.');
-    //   } else {
-    //     this.subscribedUsers.add(chatId);
-    //     this.bot.sendMessage(
-    //       chatId,
-    //       'You are now subscribed to weather updates here.',
-    //     );
-    //     console.log("calling function");
-        
-    //     this.sendWeatherUpdate(chatId);
-    //   }
-    // });
-
-    // this.bot.onText(/\/unsubscribe/, (msg) => {
-    //   const chatId = msg.chat.id;
-    //   if (this.subscribedUsers.has(chatId)) {
-    //     this.subscribedUsers.delete(chatId);
-    //     this.bot.sendMessage(
-    //       chatId,
-    //       'You have unsubscribed from weather updates.',
-    //     );
-    //   } else {
-    //     this.bot.sendMessage(chatId, 'You are not subscribed.');
-    //   }
-    // });
     
   }
 
